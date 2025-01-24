@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectcss.css">
+    <title>Conference Room Availability</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="logo">UMBC <img src="https://styleguide.umbc.edu/wp-content/uploads/sites/113/2019/09/UMBCretrievers_JUSTHEAD-on-white-or-black.png" width="100" height="100" a /> </h1>
+    </div>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Retriever Web Solutions</h1>
+            <h4>We aim to provide university students with an approachable tool to find and reserve study rooms based on their needs.</h4>
+        </div>
+    </header>
+    <div class="align-center">
+        <h2 class="center">Conference Room Availability</h2>
+    </div>
+    <table border="1" class="center">
+        <tr>
+            <th>Building</th>
+            <th>Conference Room Number</th>
+            <th>Available From</th>
+            <th>Capacity</th>
+        </tr>
+        <tr>
+            <td>Sondheim</td>
+            <td>102</td>
+            <td>08:00am to 08:00pm</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Life Sciences</td>
+            <td>232</td>
+            <td>08:00am to 11:00pm</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Sherman</td>
+            <td>106</td>
+            <td>06:00am to 08:00pm</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>ITE</td>
+            <td>456</td>
+            <td>12:00pm to 07:00pm</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <form action="cr_check.php" method="POST" class="center">
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" min="07:00" max="24:00"/>
+        <div class="filter-container">
+            <input type="submit" value="Filter" class="filter-button">
+        </div>
+    </form>
+
+    <div class="center">
+        <form action="cr_checkin_main.html"><input type="submit" value="Check In and Check Out" class="filter-button"></form>
+        <form action="reservation_room_main.html"><input type="submit" value="Reservation" class="filter-button"></form>
+    </div>
+</body>
+</html>

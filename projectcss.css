@@ -1,0 +1,227 @@
+﻿/* Combined CSS Styles */
+
+/* Reset default margin, padding, and font */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header styles */
+header {
+    background-color: #FDB515;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+h1.logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+    h1.logo img {
+        width: 80px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+h2 {
+    color: #000;
+}
+
+/* Yellow banner */
+.banner {
+    background-color: #FDB515;
+    height: 70px;
+    width: 100%;
+}
+
+/* Hero section */
+.hero {
+    height: 40vh;
+    background: url('https://eventservices.umbc.edu/wp-content/uploads/sites/590/2019/07/The-Commons-Room-332.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    margin-bottom: 2rem;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+/* Style for hero text */
+.hero-text {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Center alignment */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Confirmation container */
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Confirmation message */
+.confirmation-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .confirmation-message h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .confirmation-message p {
+        font-size: 16px;
+        color: #000;
+    }
+
+/* Button style */
+.check-out-button,
+.filter-button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+    .check-out-button:hover,
+    .filter-button:hover {
+        background-color: #ffcc00;
+    }
+
+/* Add this CSS to adjust the layout */
+.additional-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(80vh - 40vh);
+    margin-top: 20px;
+}
+
+    .additional-content img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 10px;
+    }
+
+/* Table styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ffd700;
+    color: #000;
+}
+
+/* Align text to the center of table*/
+.align-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+}
+
+    /* Adjust form input alignment */
+    form label {
+        display: block;
+        text-align: center;
+    }
+
+    form input[type="text"],
+    form input[type="number"] {
+        display: block;
+        margin: 0 auto;
+    }
+
+    form input[type="submit"] {
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+    input[type="submit"]:hover {
+        background-color: #ffcc00;
+    }
+
+input[type="text"],
+input[type="time"],
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* Additional Information input field */
+#extra {
+    width: calc(100% - 20px);
+}

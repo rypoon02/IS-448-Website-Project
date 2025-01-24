@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectcss.css">
+    <title>Study Room Check In</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="logo">UMBC <img src="https://styleguide.umbc.edu/wp-content/uploads/sites/113/2019/09/UMBCretrievers_JUSTHEAD-on-white-or-black.png" width="100" height="100" alt="UMBC Logo" /></h1>
+    </div>
+
+    <header class="hero">
+        <h2>Study Room Check In</h2>
+    </header>
+    <form action="cr_checkout_main.html" method="post">
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id" required><br>
+
+        <label for="building">Building:</label><br>
+        <input type="text" id="building" name="building" required><br>
+
+        <label for="study_room">Study Room:</label><br>
+        <input type="text" id="study_room" name="study_room" required><br>
+
+        <label for="time">Time:</label><br>
+        <input type="text" id="time" name="time" required><br>
+
+        <input type="submit" value="Check In/Check Out">
+    </form>
+</body>
+</html>

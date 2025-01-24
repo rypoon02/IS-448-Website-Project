@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectcss.css">
+    <title>Room Reservation</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="logo">UMBC <img src="https://styleguide.umbc.edu/wp-content/uploads/sites/113/2019/09/UMBCretrievers_JUSTHEAD-on-white-or-black.png" width="100" height="100" alt="UMBC Logo" /></h1>
+    </div>
+
+    <header class="hero">
+        <h2>Room Reservation</h2>
+    </header>
+
+    <form action="reservation_info.php" method="post" class="center">
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="res_student_id" required><br>
+
+        <label for="partysize">Party Size:</label><br>
+        <input type="number" id="partysize" name="res_partysize" required><br>
+
+        <label for="purpose">Purpose:</label><br>
+        <input type="text" id="Purpose" name="res_purpose" required><br>
+
+        <label for="time">Additional Information:</label><br>
+        <input type="text" id="extra" name="res_extra"><br>
+
+        <input type="submit" value="Submit" class="filter-button">
+    </form>
+</body>
+</html>

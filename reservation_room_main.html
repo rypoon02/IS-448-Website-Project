@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="projectcss.css">
+    <title>Retrieve A Room</title>
+    <script src="reservation_room.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="logo">UMBC <img src="https://styleguide.umbc.edu/wp-content/uploads/sites/113/2019/09/UMBCretrievers_JUSTHEAD-on-white-or-black.png" width="100" height="100" alt="UMBC Logo" /></h1>
+    </div>
+    <header class="hero">
+        <h2>Room Reservation</h2>
+    </header>
+    <div>
+        <h1>What building do you want to study in?</h1>
+        <form id="reservationForm" method="post">
+            <label>
+                Select Building:
+                <select id="res_building" name="res_building" onchange="filterAndCreateButtons()" required>
+                    <option disabled selected value="">Select Building</option>
+                    <!-- Options will be loaded here dynamically -->
+                </select>
+                <br />
+                Select Start Time:
+                <input type="time" id="start_time" name="start_time" required>
+                <br />
+                Select End Time:
+                <input type="time" id="end_time" name="end_time" required>
+            </label>
+            <br />
+            <p><input type="checkbox" id="whiteboard" name="room_equip[]" value="whiteboard"> Whiteboard</p>
+            <p><input type="checkbox" id="smartboard" name="room_equip[]" value="smartboard"> Smartboard </p>
+            <br />
+            <input type="button" value="Filter" onclick="filterAndCreateButtons()">
+        </form>
+    </div>
+    <div id="filteredRooms"></div>
+</body>
+</html>
