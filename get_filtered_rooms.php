@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$servername = "studentdb-maria.gl.umbc.edu";
+$servername = "";
 $username = "";
 $password = "";
 $dbname = "";
